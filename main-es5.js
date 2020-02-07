@@ -1586,7 +1586,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _classCallCheck(this, GeralService);
 
       this.http = http;
-      this.url = 'http://projetocmvbackend.herokuapp.com/rota'; //'http://localhost:5000/rota';
+      this.url = 'https://projetocmvbackend.herokuapp.com/rota'; //'http://localhost:5000/rota';
       // Summary: Chama método do backend de forma Genérica
       // Params: url Endpoint
       // return: json

@@ -891,7 +891,7 @@ let GeralService = class GeralService {
     // Params: criação http para requisições
     constructor(http) {
         this.http = http;
-        this.url = 'http://projetocmvbackend.herokuapp.com/rota'; //'http://localhost:5000/rota';
+        this.url = 'https://projetocmvbackend.herokuapp.com/rota'; //'http://localhost:5000/rota';
         // Summary: Chama método do backend de forma Genérica
         // Params: url Endpoint
         // return: json
