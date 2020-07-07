@@ -91,7 +91,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<h1 class=\"animated fadeIn\">Histórico</h1>\n\n<div style=\"display: flex; justify-content: center;\">\n\n  <mat-divider style=\"width: 10%;\"></mat-divider>\n\n</div>\n\n<div class=\"row animated fadeInUp\">\n  <div class=\"col-md-6\">\n    <div class=\" mat-elevation-z8\">\n\n      <mat-table #tabelaDados  [dataSource]=\"dataSource2\">\n        <!-- ID Column -->\n        <ng-container matColumnDef=\"comodo\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Cômodo </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\"> {{row.comodo}} </mat-cell>\n        </ng-container>\n\n        <!-- Progress Column -->\n        <ng-container matColumnDef=\"tempo\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Tempo (Min) </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\" > {{row.tempo}} </mat-cell>\n        </ng-container>\n\n        <!-- Progress Column -->\n        <ng-container matColumnDef=\"data\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Data </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\" > {{row.data}} </mat-cell>\n        </ng-container>\n\n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n\n      </mat-table>\n    </div>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<h1 class=\"animated fadeIn\">Histórico</h1>\n\n<div style=\"display: flex; justify-content: center;\">\n\n  <mat-divider style=\"width: 10%;\"></mat-divider>\n\n</div>\n\n<div class=\"row animated fadeInUp\">\n  <div class=\"col-md-8\">\n    <div class=\" mat-elevation-z8\">\n\n      <mat-table #tabelaDados  [dataSource]=\"dataSource2\">\n        <!-- ID Column -->\n        <ng-container matColumnDef=\"nome\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Nome </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\"> {{row.nome}} </mat-cell>\n        </ng-container>\n        \n        <!-- ID Column -->\n        <ng-container matColumnDef=\"comodo\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Cômodo </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\"> {{row.comodo}} </mat-cell>\n        </ng-container>\n\n        <!-- Progress Column -->\n        <ng-container matColumnDef=\"tempo\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Tempo (min) </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\" > {{row.tempo}} </mat-cell>\n        </ng-container>\n\n        <!-- Progress Column -->\n        <ng-container matColumnDef=\"data\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Data </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\" > {{row.data}} </mat-cell>\n        </ng-container>\n\n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n\n      </mat-table>\n    </div>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -111,7 +111,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<h1 class=\"animated fadeIn\">Localização</h1>\n\n<div style=\"display: flex; justify-content: center;\">\n\n  <mat-divider style=\"width: 10%;\"></mat-divider>\n\n</div>\n\n<div class=\"row animated fadeInUp\">\n  <div id=\"animacaoMatCard\"  class=\"col-md-8 \">\n    <mat-card class=\"localizacao-card\">\n        <img mat-card-image [src]='imagem'>\n          <mat-card-content>\n\n            <p>\n              A parte colorida demonstra exatamente onde o idoso está.\n            </p>\n\n          </mat-card-content>\n\n          <mat-card-actions>\n\n            <!-- <button mat-raised-button (click)=\"trocaImagem()\">Troca</button> -->\n            <button mat-raised-button (click)=\"trocaImagem()\">Troca</button>\n\n          </mat-card-actions>\n    </mat-card>\n  </div>\n\n  <div class=\"col-md-4\">\n    <mat-card>\n      <mat-card-title> Informações </mat-card-title>\n\n      <div id=\"animacaoIcone\">\n\n        Local atual: {{local}} - <i [class]='icone'></i>\n\n      </div><br/>\n\n      Tempo no local: {{tempoLocal}} min\n\n    </mat-card>\n  </div>\n</div>\n\n";
+    __webpack_exports__["default"] = "<h1 class=\"animated fadeIn\">Localização</h1>\n\n<div style=\"display: flex; justify-content: center;\">\n\n  <mat-divider style=\"width: 10%;\"></mat-divider>\n\n</div>\n\n<div class=\"row animated fadeInUp\">\n  <div id=\"animacaoMatCard\"  class=\"col-md-6 \">\n    <mat-card class=\"localizacao-card\">\n        <img mat-card-image [src]='imagem'>\n          <mat-card-content>\n\n            <p>\n              A figura do Vô Abraham indica onde o idoso(a) está! \n            </p>\n\n          </mat-card-content>\n\n          <mat-card-actions>\n\n            <!-- <button mat-raised-button (click)=\"trocaImagem()\">Troca</button> -->\n            <!-- <button mat-raised-button (click)=\"trocaImagem()\">Troca</button> -->\n\n          </mat-card-actions>\n    </mat-card>\n  </div>\n\n  <div class=\"col-md-5\">\n    <mat-card >\n      <mat-card-title> Informações </mat-card-title>\n     \n\n      <div style=\" text-align: left;\" >\n\n        Local atual: <span id=\"animacaoIcone\"> {{local}} <i [class]='icone'></i></span>\n\n        <br/>\n\n        Tempo no local: {{tempoLocal}} min\n        <br/>\n\n        Bateria da Tag: {{bateria}} mAH\n        \n      </div>\n    </mat-card>\n  </div>\n</div>\n\n";
     /***/
   },
 
@@ -131,7 +131,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<h1 class=\"animated fadeIn\">Configurações</h1>\n\n<div style=\"display: flex; justify-content: center;\">\n\n  <mat-divider style=\"width: 10%;\"></mat-divider>\n\n</div>\n\n<div class=\"row animated fadeInUp\">\n  <div class=\"col-md-6 box\">\n    <mat-card  class=\"mat-elevation-z8 card\">\n      <mat-card-title> Horários e Restrições </mat-card-title>\n\n        <mat-form-field style=\"text-decoration-color:white; \" >\n          <mat-select class=\"comodoSelect\" #comodo placeholder=\"Cômodo\">\n            <mat-option [hidden]=\"hiddenBanheiro\" value=\"banheiro\">Banheiro</mat-option>\n            <mat-option [hidden]=\"hiddenCozinha\"  value=\"cozinha\">Cozinha</mat-option>\n            <mat-option [hidden]=\"hiddenSala\"     value=\"sala\">Sala</mat-option>\n            <mat-option [hidden]=\"hiddenQuarto\"   value=\"quarto\">Quarto</mat-option>\n          </mat-select>\n        </mat-form-field>\n\n        <mat-form-field >\n          <mat-label>Tempo Estimado</mat-label>\n          <input #tempo matInput>\n          <span matSuffix>minutos</span>\n        </mat-form-field>\n\n        <div class=\"row\" style=\"margin:0 auto; display: block;\">\n          <button mat-raised-button  (click) = \"addAlerta(comodo.value, tempo.value); comodo.value=''; tempo.value=''\" color=\"primary\">Adicionar</button>\n        </div>\n\n    </mat-card>\n  </div>\n\n  <div class=\"col-md-6\">\n    <div class=\" mat-elevation-z8\">\n\n      <mat-table #tabelaDados  class = \"card\" [dataSource]=\"dataSource\">\n        <!-- ID Column -->\n        <ng-container matColumnDef=\"comodo\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Cômodo </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\"> {{row.comodo}} </mat-cell>\n        </ng-container>\n\n        <!-- Progress Column -->\n        <ng-container matColumnDef=\"tempo\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Tempo (Min) </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\" > {{row.tempo}} </mat-cell>\n        </ng-container>\n\n        <ng-container matColumnDef=\"acoes\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Ações </mat-header-cell>\n          <mat-cell class=\"centralizar\"  *matCellDef=\"let row\">\n            <a (click) = \"deletarRestricao(row)\"><mat-icon style=\"color:#C73F3F;\" >delete_outline</mat-icon> </a>\n          </mat-cell>\n        </ng-container>\n\n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n\n      </mat-table>\n\n      <div class=\"divBtnSave\">\n\n        <button  (click) = \"salvarRestricoes()\" class=\"iconeSave btn btn-outline-dark\">\n          Salvar <a  class=\"fas fa-save\"></a>\n        </button>\n\n      </div>\n    </div>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<h1 class=\"animated fadeIn\">Configurações</h1>\n\n<div style=\"display: flex; justify-content: center;\">\n\n  <mat-divider style=\"width: 10%;\"></mat-divider>\n\n</div>\n\n<div class=\"row animated fadeInUp\">\n  <div class=\"col-md-6 box\">\n    <mat-card  class=\"mat-elevation-z8 card\">\n      <mat-card-title> Horários e Restrições </mat-card-title>\n\n        <!-- <mat-form-field style=\"text-decoration-color:white; \" >\n          <mat-select class=\"comodoSelect\" #comodo placeholder=\"Cômodo\">\n            <mat-option [hidden]=\"hiddenBanheiro\" value=\"banheiro\">Banheiro</mat-option>\n            <mat-option [hidden]=\"hiddenCozinha\"  value=\"cozinha\">Cozinha</mat-option>\n            <mat-option [hidden]=\"hiddenSala\"     value=\"sala\">Sala</mat-option>\n            <mat-option [hidden]=\"hiddenQuarto\"   value=\"quarto\">Quarto</mat-option>\n          </mat-select>\n        </mat-form-field>  -->\n\n        <mat-form-field style=\"text-decoration-color:white; \" >\n          <mat-select #comodo  [(ngModel)] = \"currentComodo\" placeholder=\"Cômodo\">\n            <mat-option  *ngFor = \"let obj of locais; index as i;\" [value]=\"obj\" >{{obj.localizacao}}</mat-option>\n          </mat-select>\n        </mat-form-field>\n\n        <mat-form-field >\n          <mat-label>Tempo Estimado</mat-label>\n          <input #tempo matInput>\n          <span matSuffix>minutos</span>\n        </mat-form-field>\n\n        <div class=\"row\" style=\"margin:0 auto; display: block;\">\n          <!-- <button mat-raised-button  (click) = \"addAlerta({{obj.Localizacao}}.value, tempo.value); comodo.value=''; tempo.value=''\" color=\"primary\">Adicionar</button> -->\n          <button mat-raised-button  (click) = \"addAlerta(currentComodo, tempo.value); tempo.value=''; comodo.value='' \" color=\"primary\">Adicionar</button> \n        </div>\n\n    </mat-card>\n  </div>\n\n  <div class=\"col-md-6\">\n    <div class=\" mat-elevation-z8\">\n\n      <mat-table #tabelaDados  class = \"card\" [dataSource]=\"dataSource\">\n        <!-- ID Column -->\n        <ng-container matColumnDef=\"comodo\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Cômodo </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\"> {{row.comodo}} </mat-cell>\n        </ng-container>\n\n        <!-- Progress Column -->\n        <ng-container matColumnDef=\"tempo\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Tempo (Min) </mat-header-cell>\n          <mat-cell class=\"centralizar\" *matCellDef=\"let row\" > {{row.tempo}} </mat-cell>\n        </ng-container>\n\n        <ng-container matColumnDef=\"acoes\">\n          <mat-header-cell class=\"centralizar\" *matHeaderCellDef > Ações </mat-header-cell>\n          <mat-cell class=\"centralizar\"  *matCellDef=\"let row\">\n            <a (click) = \"deletarRestricao(row)\"><mat-icon style=\"color:#C73F3F;\" >delete_outline</mat-icon> </a>\n          </mat-cell>\n        </ng-container>\n\n        <mat-header-row *matHeaderRowDef=\"displayedColumns\"></mat-header-row>\n        <mat-row *matRowDef=\"let row; columns: displayedColumns;\"></mat-row>\n\n      </mat-table>\n\n      <div class=\"divBtnSave\">\n\n        <button  (click) = \"salvarRestricoes()\" class=\"iconeSave btn btn-outline-dark\">\n          Salvar <a  class=\"fas fa-save\"></a>\n        </button>\n\n      </div>\n    </div>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -932,6 +932,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -939,7 +945,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _menu_nav_lateral_menu_nav_lateral_component__WEBPACK_IMPORTED_MODULE_7__["MenuNavLateralComponent"], _pages_home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"], _pages_pagina_configuracao_pagina_configuracao_component__WEBPACK_IMPORTED_MODULE_9__["PaginaConfiguracaoComponent"], _pages_historico_historico_component__WEBPACK_IMPORTED_MODULE_10__["HistoricoComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"], _cmv_frontend_src_app_material_module__WEBPACK_IMPORTED_MODULE_1__["MaterialModule"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_6__["BrowserAnimationsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"], _cmv_frontend_src_app_material_module__WEBPACK_IMPORTED_MODULE_1__["MaterialModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"]],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })], AppModule);
@@ -1131,27 +1137,68 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _services_geral_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./../../services/geral.service */
+    "./src/app/services/geral.service.ts");
 
     var HistoricoComponent =
     /*#__PURE__*/
     function () {
-      function HistoricoComponent() {
+      function HistoricoComponent(serviceGeral) {
         _classCallCheck(this, HistoricoComponent);
 
-        this.displayedColumns = ['comodo', 'tempo', 'data'];
+        this.serviceGeral = serviceGeral;
+        this.displayedColumns = ['nome', 'comodo', 'tempo', 'data'];
         this.dataSource2 = new _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatTableDataSource"]();
       }
 
       _createClass(HistoricoComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.populaTabelaHistorico();
+          this.dataSource2.filter = '';
+        }
+      }, {
+        key: "populaTabelaHistorico",
+        value: function populaTabelaHistorico() {
+          var _this = this;
+
+          this.serviceGeral.getEndpoint('/getHistorico').subscribe(function (data) {
+            console.log(data);
+            console.log(data.arHistorico[1]);
+            data.arHistorico.forEach(function (element) {
+              // this.ret.nome = element.Nome;
+              // this.ret.comodo = element.Localizacao;
+              // this.ret.tempo = element.Data_Evento;
+              // this.ret.data = element.Data_Evento_Fim;
+              _this.dataSource2.data.push({
+                nome: element.Nome,
+                comodo: element.Localizacao,
+                tempo: element.Tempo,
+                data: element.Data_Evento
+              });
+
+              _this.dataSource2.filter = '';
+            });
+          });
+        }
       }]);
 
       return HistoricoComponent;
     }();
 
+    HistoricoComponent.ctorParameters = function () {
+      return [{
+        type: _services_geral_service__WEBPACK_IMPORTED_MODULE_3__["GeralService"]
+      }];
+    };
+
     HistoricoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
       selector: 'app-historico',
+      providers: [_services_geral_service__WEBPACK_IMPORTED_MODULE_3__["GeralService"]],
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./historico.component.html */
       "./node_modules/raw-loader/dist/cjs.js!./src/app/pages/historico/historico.component.html")).default,
@@ -1178,7 +1225,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".localizacao-card {\n  max-width: 100%;\n  margin-left: 10%;\n}\n\n.row {\n  margin-top: 2%;\n}\n\n@media (max-width: 767px) {\n  .localizacao-card {\n    margin-left: 0;\n  }\n}\n\nh1 {\n  padding-bottom: 10px;\n  padding-top: 20px;\n  color: white;\n}\n\nimg {\n  height: 400px;\n}\n\n.mat-divider {\n  border-top-color: #E91E63;\n}\n\n.conteudo {\n  overflow: hidden;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9odWdvbmV0by9EZXNrdG9wL1JlcG9zaXRvcmlvcy9jbXYtZnJvbnRlbmQvc3JjL2FwcC9wYWdlcy9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQ0NGOztBREVBO0VBQ0UsY0FBQTtBQ0NGOztBREVBO0VBRUU7SUFDRSxjQUFBO0VDQUY7QUFDRjs7QURJQTtFQUNFLG9CQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0FDRkY7O0FES0E7RUFDRSxhQUFBO0FDRkY7O0FES0E7RUFDRSx5QkFBQTtBQ0ZGOztBREtBO0VBQ0UsZ0JBQUE7QUNGRiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2NhbGl6YWNhby1jYXJkIHtcbiAgbWF4LXdpZHRoOiAxMDAlO1xuICBtYXJnaW4tbGVmdDogMTAlO1xufVxuXG4ucm93e1xuICBtYXJnaW4tdG9wOjIlO1xufVxuXG5AbWVkaWEobWF4LXdpZHRoOjc2N3B4KXtcblxuICAubG9jYWxpemFjYW8tY2FyZHtcbiAgICBtYXJnaW4tbGVmdDogMDtcblxuICB9XG59XG5cbmgxIHtcbiAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gIHBhZGRpbmctdG9wOjIwcHg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW1ne1xuICBoZWlnaHQ6IDQwMHB4O1xufVxuXG4ubWF0LWRpdmlkZXJ7XG4gIGJvcmRlci10b3AtY29sb3I6I0U5MUU2Mztcbn1cblxuLmNvbnRldWRve1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuIiwiLmxvY2FsaXphY2FvLWNhcmQge1xuICBtYXgtd2lkdGg6IDEwMCU7XG4gIG1hcmdpbi1sZWZ0OiAxMCU7XG59XG5cbi5yb3cge1xuICBtYXJnaW4tdG9wOiAyJTtcbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDc2N3B4KSB7XG4gIC5sb2NhbGl6YWNhby1jYXJkIHtcbiAgICBtYXJnaW4tbGVmdDogMDtcbiAgfVxufVxuaDEge1xuICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgcGFkZGluZy10b3A6IDIwcHg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW1nIHtcbiAgaGVpZ2h0OiA0MDBweDtcbn1cblxuLm1hdC1kaXZpZGVyIHtcbiAgYm9yZGVyLXRvcC1jb2xvcjogI0U5MUU2Mztcbn1cblxuLmNvbnRldWRvIHtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn0iXX0= */";
+    __webpack_exports__["default"] = ".localizacao-card {\n  max-width: 100%;\n  margin-left: 10%;\n}\n\n.row {\n  margin-top: 2%;\n}\n\n@media (max-width: 767px) {\n  .localizacao-card {\n    margin-left: 0;\n  }\n}\n\nh1 {\n  padding-bottom: 10px;\n  padding-top: 20px;\n  color: white;\n}\n\nimg {\n  height: 800px;\n}\n\n.mat-divider {\n  border-top-color: #E91E63;\n}\n\n.conteudo {\n  overflow: hidden;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9odWdvbmV0by9EZXNrdG9wL1JlcG9zaXRvcmlvcy9jbXYtZnJvbnRlbmQvc3JjL2FwcC9wYWdlcy9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQUE7RUFDQSxnQkFBQTtBQ0NGOztBREVBO0VBQ0UsY0FBQTtBQ0NGOztBREVBO0VBRUU7SUFDRSxjQUFBO0VDQUY7QUFDRjs7QURJQTtFQUNFLG9CQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0FDRkY7O0FES0E7RUFDRSxhQUFBO0FDRkY7O0FES0E7RUFDRSx5QkFBQTtBQ0ZGOztBREtBO0VBQ0UsZ0JBQUE7QUNGRiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5sb2NhbGl6YWNhby1jYXJkIHtcbiAgbWF4LXdpZHRoOiAxMDAlO1xuICBtYXJnaW4tbGVmdDogMTAlO1xufVxuXG4ucm93e1xuICBtYXJnaW4tdG9wOjIlO1xufVxuXG5AbWVkaWEobWF4LXdpZHRoOjc2N3B4KXtcblxuICAubG9jYWxpemFjYW8tY2FyZHtcbiAgICBtYXJnaW4tbGVmdDogMDtcblxuICB9XG59XG5cbmgxIHtcbiAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gIHBhZGRpbmctdG9wOjIwcHg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW1ne1xuICBoZWlnaHQ6IDgwMHB4O1xufVxuXG4ubWF0LWRpdmlkZXJ7XG4gIGJvcmRlci10b3AtY29sb3I6I0U5MUU2Mztcbn1cblxuLmNvbnRldWRve1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuIiwiLmxvY2FsaXphY2FvLWNhcmQge1xuICBtYXgtd2lkdGg6IDEwMCU7XG4gIG1hcmdpbi1sZWZ0OiAxMCU7XG59XG5cbi5yb3cge1xuICBtYXJnaW4tdG9wOiAyJTtcbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDc2N3B4KSB7XG4gIC5sb2NhbGl6YWNhby1jYXJkIHtcbiAgICBtYXJnaW4tbGVmdDogMDtcbiAgfVxufVxuaDEge1xuICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbiAgcGFkZGluZy10b3A6IDIwcHg7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuaW1nIHtcbiAgaGVpZ2h0OiA4MDBweDtcbn1cblxuLm1hdC1kaXZpZGVyIHtcbiAgYm9yZGVyLXRvcC1jb2xvcjogI0U5MUU2Mztcbn1cblxuLmNvbnRldWRvIHtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbn0iXX0= */";
     /***/
   },
 
@@ -1232,6 +1279,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*#__PURE__*/
     __webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
 
+    var dadosEvento = function dadosEvento() {
+      _classCallCheck(this, dadosEvento);
+    };
+
     var HomeComponent =
     /*#__PURE__*/
     // Summary: Componente da tela de Home
@@ -1240,68 +1291,195 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, HomeComponent);
 
         this.serviceGeral = serviceGeral;
-        this.tempoLocal = 10;
         this.imagem = 'https://media.gazetadopovo.com.br/2019/02/e27d049663d84c627d7f228524c01e16-gpMedium.jpg';
-      }
+      } // public trocaImagem() {
+      //   const imagemAtual = 'https://media.gazetadopovo.com.br/2019/02/e27d049663d84c627d7f228524c01e16-gpMedium.jpg';
+      //   if (this.imagem === imagemAtual) {
+      //     this.icone = 'fas fa-couch';
+      //     this.local = 'Sala';
+      //     this.imagem = 'https://revistacarro.com.br/wp-content/uploads/2019/12/Mercedes-Benz-GLA_5.jpg';
+      //   } else {
+      //     this.icone = 'fas fa-bed';
+      //     this.local = 'Quarto';
+      //     this.imagem = 'https://media.gazetadopovo.com.br/2019/02/e27d049663d84c627d7f228524c01e16-gpMedium.jpg';
+      //   }
+      //   $('#animacaoMatCard').addClass('animated fadeIn');
+      //   $('#animacaoIcone').addClass('animated fadeIn');
+      //   setTimeout(() => {
+      //     $('#animacaoIcone').removeClass('animated fadeIn');
+      //     $('#animacaoMatCard').removeClass('animated fadeIn');
+      //   }, 1000);
+      // }
+
 
       _createClass(HomeComponent, [{
-        key: "trocaImagem",
-        value: function trocaImagem() {
-          var imagemAtual = 'https://media.gazetadopovo.com.br/2019/02/e27d049663d84c627d7f228524c01e16-gpMedium.jpg';
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this2 = this;
 
-          if (this.imagem === imagemAtual) {
-            this.icone = 'fas fa-couch';
-            this.local = 'Sala';
-            this.imagem = 'https://revistacarro.com.br/wp-content/uploads/2019/12/Mercedes-Benz-GLA_5.jpg';
-          } else {
-            this.icone = 'fas fa-bed';
-            this.local = 'Quarto';
-            this.imagem = 'https://media.gazetadopovo.com.br/2019/02/e27d049663d84c627d7f228524c01e16-gpMedium.jpg';
+          //<RESUMO>
+          //  As primeiras instruções abaixo fazem parte da inicializaçao do dashboard. Captura localizacao inicial e atualiza dados
+          //</RESUMO>
+          this.evento = new dadosEvento();
+          this.local = " ...";
+          this.imagem = "./assets/atualizando-ap.png";
+          this.bateria = "...";
+          this.tempoLocal;
+          this.contMin = 0;
+          this.primeiroAcesso = true;
+          this.capturaLocalizacao();
+          setTimeout(function () {
+            //this.capturaLocalizacao();
+            console.log(_this2.evento.idEvento);
+            console.log(_this2.evento.localizacao);
+            _this2.idEventoAtual = _this2.evento.idEvento;
+            _this2.localizacaoAtual = _this2.evento.localizacao;
+            _this2.bateria = _this2.evento.bateria;
+
+            _this2.atualizaLocalizacao(_this2.localizacaoAtual);
+
+            _this2.disparaTimer(true);
+          }, 5); // Summary: Intervalo de 10 segundos que verifica se há atualização de posição
+
+          setInterval(function () {
+            //this.trocaImagem();
+            _this2.capturaLocalizacao();
+
+            if (_this2.idEventoAtual != _this2.evento.idEvento) {
+              if (_this2.localizacaoAtual != _this2.evento.localizacao) {
+                _this2.localizacaoAtual = _this2.evento.localizacao; // Evento que atualiza a localização do individuo
+
+                _this2.atualizaLocalizacao(_this2.localizacaoAtual);
+
+                _this2.disparaTimer(true);
+              }
+
+              _this2.idEventoAtual = _this2.evento.idEvento;
+
+              _this2.disparaTimer(false);
+            } else _this2.disparaTimer(false);
+          }, 3000);
+        } // Summary: Load da localização inicial
+
+      }, {
+        key: "capturaLocalizacao",
+        value: function capturaLocalizacao() {
+          var _this3 = this;
+
+          console.log("Captura de Localizaçao iniciada...\n");
+          this.serviceGeral.getEndpoint('getLocalizacao').subscribe(function (data) {
+            _this3.evento.idEvento = data.IDEvento;
+            _this3.evento.nome = data.Nome;
+            _this3.evento.macAddress = data.MacAddress;
+            _this3.evento.localizacao = data.Localizacao;
+            _this3.evento.dataEvento = data.DataEvento;
+            _this3.evento.bateria = data.Bateria;
+            _this3.bateria = data.Bateria;
+
+            if (_this3.primeiroAcesso) {
+              _this3.primeiroAcesso = false;
+
+              _this3.serviceGeral.getEndpointSpec("getTempoNoLocal/".concat(data.IDEvento)).subscribe(function (data) {
+                _this3.tempoLocal = data.Tempo;
+                console.log(data.Tempo);
+              });
+            }
+
+            console.log(data.Bateria);
+          });
+          console.log("Captura de Localizaçao Concluída...\n");
+        }
+      }, {
+        key: "atualizaLocalizacao",
+        value: function atualizaLocalizacao(novaLocalizacao) {
+          console.log("Atualização de Localizaçao iniciada...\n Nova Localizacao:", novaLocalizacao);
+
+          switch (novaLocalizacao) {
+            case "Quarto":
+              {
+                this.icone = 'fas fa-couch';
+                this.local = 'Quarto - '; //this.imagem = 'https://www.audi.com.br/dam/nemo/br/models/Q3/2020/01_q3_designexterior.jpg?output-format=webp&downsize=1920px:*';
+
+                this.imagem = "./assets/imgQuarto1.png";
+                this.ativaAnimacao();
+                break;
+              }
+
+            case "Quarto2":
+              {
+                this.icone = 'fas fa-bed';
+                this.local = 'Quarto 2 - '; //this.imagem = 'https://abrilquatrorodas.files.wordpress.com/2019/09/bmw_320d_sport_line_30_04f9031408af05e8.jpg?quality=70&strip=info';
+
+                this.imagem = "./assets/imgQuarto2.png";
+                this.ativaAnimacao();
+                break;
+              }
+
+            case "Sala":
+              {
+                this.icone = 'fas fa-couch';
+                this.local = 'Sala - '; //this.imagem = 'https://s2.glbimg.com/N4VVaApD5VG_3Y13TS67tN0ZDcM=/620x413/e.glbimg.com/og/ed/f/original/2019/03/07/jeep_compass_plug-in_hybrid.jpeg';
+
+                this.imagem = "./assets/imgSala.png";
+                this.ativaAnimacao();
+                break;
+              }
+
+            case "Banheiro":
+              {
+                this.icone = 'fas fa-toilet-paper';
+                this.local = 'Banheiro - '; //this.imagem = 'https://s2.glbimg.com/UPmcqDBZsoLo4RjBap1KGSzAj3I=/620x413/e.glbimg.com/og/ed/f/original/2020/04/16/nivus-frente-branco_1.jpg';
+
+                this.imagem = "./assets/imgBanheiro.png";
+                this.ativaAnimacao();
+                break;
+              }
+
+            case "Cozinha":
+              {
+                this.icone = 'fas fa-cookie-bite';
+                this.local = 'Cozinha - '; //this.imagem = 'https://abrilquatrorodas.files.wordpress.com/2019/03/jeep-renegade-phev.jpg?quality=70&strip=info';
+
+                this.imagem = "./assets/imgCozinha.png";
+                this.ativaAnimacao();
+                break;
+              }
           }
-
+        }
+      }, {
+        key: "ativaAnimacao",
+        value: function ativaAnimacao() {
           jquery__WEBPACK_IMPORTED_MODULE_3__('#animacaoMatCard').addClass('animated fadeIn');
           jquery__WEBPACK_IMPORTED_MODULE_3__('#animacaoIcone').addClass('animated fadeIn');
           setTimeout(function () {
             jquery__WEBPACK_IMPORTED_MODULE_3__('#animacaoIcone').removeClass('animated fadeIn');
             jquery__WEBPACK_IMPORTED_MODULE_3__('#animacaoMatCard').removeClass('animated fadeIn');
           }, 1000);
-        }
-      }, {
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this = this;
-
-          // Summary: Intervalo de 10 segundos que verifica se há atualização de posição
-          setInterval(function () {
-            _this.trocaImagem();
-          }, 10000);
-          this.local = 'Banheiro';
-          this.icone = 'fas fa-toilet-paper';
-          this.localizacaoInicial();
-        } // Summary: Load da localização inicial
+        } //<Resumo>
+        // Funcao de disparo de tempo. Caso nao mude de localizacao, contador de minuto segue somando até chegar 1 minuto. 
+        // chegando a 1 minuto atribui + 1 no tempoLocal
+        // Caso mude de posicao, contador de minuto é zerado e tempoLocal recebe novo valor de tempo do banco
+        //</Resumo>
 
       }, {
-        key: "localizacaoInicial",
-        value: function localizacaoInicial() {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee() {
-            return regeneratorRuntime.wrap(function _callee$(_context) {
-              while (1) {
-                switch (_context.prev = _context.next) {
-                  case 0:
-                    _context.next = 2;
-                    return this.serviceGeral.getEndpoint('getLocalizacao').subscribe(function (data) {
-                      console.log('data', data);
-                    });
+        key: "disparaTimer",
+        value: function disparaTimer(mudou) {
+          console.log(" Disparando Timer ");
 
-                  case 2:
-                  case "end":
-                    return _context.stop();
-                }
-              }
-            }, _callee, this);
-          }));
+          if (!mudou) {
+            if (this.contMin == 60) {
+              this.contMin = 0;
+              this.tempoLocal++;
+            } else {
+              this.contMin = this.contMin + 10;
+              console.log("Add 10 ao contMin", this.contMin);
+            }
+
+            console.log("Nao mudou de posicao");
+          } else {
+            mudou = false;
+            if (!this.primeiroAcesso) this.tempoLocal = 0;
+          }
         }
       }]);
 
@@ -1402,119 +1580,135 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.displayedColumns = ['comodo', 'tempo', 'acoes'];
         this.dataSource = new _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatTableDataSource"]();
         this.listaRestricoesAdd = [];
+        this.listaRestricoesBanco = [];
       }
 
       _createClass(PaginaConfiguracaoComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.loadRestricoes();
+          this.loadDropDownComodos(); // console.log("COMODO ANTES DO TIMEOUT -------> ", this.comodos);
+          // setTimeout(() => {
+          //   console.log("Comodos TIMEOUT ---->", this.comodos);
+          // }, 200);
+
+          this.loadRestricoesAtivas();
         }
       }, {
-        key: "loadRestricoes",
-        value: function loadRestricoes() {
+        key: "loadDropDownComodos",
+        value: function loadDropDownComodos() {
+          var _this4 = this;
+
+          this.service.getEndpoint('getComodos').subscribe(function (data) {
+            _this4.comodos = data;
+            _this4.locais = data;
+          });
+        }
+      }, {
+        key: "loadRestricoesAtivas",
+        value: function loadRestricoesAtivas() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee2() {
-            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+          regeneratorRuntime.mark(function _callee() {
+            var _this5 = this;
+
+            return regeneratorRuntime.wrap(function _callee$(_context) {
               while (1) {
-                switch (_context2.prev = _context2.next) {
+                switch (_context.prev = _context.next) {
                   case 0:
-                    _context2.next = 2;
-                    return this.service.getEndpoint('getRestricoes').subscribe(function (data) {
-                      console.log('data', data);
+                    _context.next = 2;
+                    return this.service.getEndpoint('getRestricoes').subscribe(function (data2) {
+                      // console.log('data2', data2);
+                      if (data2) data2.forEach(function (element) {
+                        console.log(element.localizacao);
+
+                        _this5.addAlerta(element, element.tempo_restricao, true);
+                      });
                     });
 
                   case 2:
                   case "end":
-                    return _context2.stop();
+                    return _context.stop();
                 }
               }
-            }, _callee2, this);
+            }, _callee, this);
           }));
-        } // add na tabela antes de salvar
+        } // add na tabela de restricoes
 
       }, {
         key: "addAlerta",
         value: function addAlerta(com, tem) {
+          var flagBanco = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
           if (!tem) {
             alert('É necessário preencher o tempo estimado!');
           } else {
             this.dataSource.data.push({
-              comodo: com,
+              comodo: com.localizacao,
               tempo: tem
             });
             this.dataSource.filter = '';
-            this.listaRestricoesAdd.push({
-              comodo: com,
+            if (flagBanco == false) this.listaRestricoesAdd.push({
+              comodo: com.localizacao,
+              tempo: tem
+            });else this.listaRestricoesBanco.push({
+              comodo: com.localizacao,
               tempo: tem
             });
-
-            switch (com) {
-              case 'banheiro':
-                this.hiddenBanheiro = 'hidden';
-                break;
-
-              case 'cozinha':
-                this.hiddenCozinha = 'hidden';
-                break;
-
-              case 'quarto':
-                this.hiddenQuarto = 'hidden';
-                break;
-
-              case 'sala':
-                this.hiddenSala = 'hidden';
-                break;
-            }
           }
         }
       }, {
         key: "salvarRestricoes",
         value: function salvarRestricoes() {
-          if (this.listaRestricoesAdd.length === 0) {
-            alert('Nenhuma Restrição nova foi adicionada!');
+          var _this6 = this;
+
+          if (this.listaRestricoesAdd.length > 0) {
+            alert('Adiciona restricao');
+            this.listaRestricoesAdd.forEach(function (element) {
+              _this6.listaRestricoesBanco.push(element);
+
+              _this6.service.postEndpoint("salvaRestricao", element).subscribe(function (data) {});
+            });
+            this.listaRestricoesAdd = [];
+            console.log(this.listaRestricoesAdd);
           } else {
-            alert('aqui vou salvar no banco de Dados :D');
+            alert('Registre uma nova Restrição');
           }
         } // Remove da tela e da lista de adiçao
 
       }, {
         key: "deletarRestricao",
         value: function deletarRestricao(data) {
-          var _this2 = this;
+          var _this7 = this;
 
+          console.log("Deletando Restricao ->");
+          console.log(this.listaRestricoesBanco);
           this.dataSource.data.forEach(function (element, index) {
             if (element.comodo === data.comodo) {
-              _this2.dataSource.data.splice(index, 1);
-
-              _this2.listaRestricoesAdd.splice(index, 1);
+              _this7.dataSource.data.splice(index, 1);
             }
-          });
-          this.dataSource.filter = '';
+          }); // Procura se o comodo adicionado é novo ou ja estava cadastrado
 
-          switch (data.comodo) {
-            case 'banheiro':
-              this.hiddenBanheiro = '';
-              break;
-
-            case 'cozinha':
-              this.hiddenCozinha = '';
-              break;
-
-            case 'quarto':
-              this.hiddenQuarto = '';
-              break;
-
-            case 'sala':
-              this.hiddenSala = '';
-              break;
+          if (this.listaRestricoesAdd.length > 0) {
+            console.log("Deletando comodo adicionado recentemente");
+            this.listaRestricoesAdd.forEach(function (element, index) {
+              if (element.comodo === data.comodo) {
+                _this7.listaRestricoesAdd.splice(index, 1);
+              }
+            });
           }
 
-          console.log(this.listaRestricoesAdd);
-        }
-      }, {
-        key: "mostraRestricoes",
-        value: function mostraRestricoes() {// Traz do banco todas as restrições
+          if (this.listaRestricoesBanco.length > 0) {
+            console.log("Deletando comodo recuperado do banco");
+            this.listaRestricoesBanco.forEach(function (element, index) {
+              if (element.comodo === data.comodo) {
+                _this7.listaRestricoesBanco.splice(index, 1);
+
+                _this7.service.postEndpoint("deletaRestricao", element).subscribe(function (data) {});
+              }
+            });
+          }
+
+          this.dataSource.filter = '';
         }
       }]);
 
@@ -1581,18 +1775,28 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var GeralService = // Summary: Construtor do serviço
     // Params: criação http para requisições
     function GeralService(http) {
-      var _this3 = this;
+      var _this8 = this;
 
       _classCallCheck(this, GeralService);
 
       this.http = http;
-      this.url = 'https://projetocmvbackend.herokuapp.com/rota'; //'http://localhost:5000/rota';
+      this.url = 'http://localhost:5001/rota'; //'https://projetocmvbackend.herokuapp.com/rota'
       // Summary: Chama método do backend de forma Genérica
       // Params: url Endpoint
       // return: json
 
-      this.getEndpoint = function (endpoint) {
-        return _this3.http.get("".concat(_this3.url, "/").concat(endpoint));
+      this.getEndpoint = function (endpoint, dados) {
+        return _this8.http.get("".concat(_this8.url, "/").concat(endpoint));
+      };
+
+      this.getEndpointSpec = function (endpoint) {
+        return _this8.http.get("".concat(_this8.url, "/").concat(endpoint));
+      };
+
+      this.postEndpoint = function (endpoint, dados) {
+        return _this8.http.post("".concat(_this8.url, "/").concat(endpoint), {
+          data: dados
+        });
       };
     };
 
